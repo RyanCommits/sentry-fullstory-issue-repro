@@ -2,6 +2,37 @@
   "expo": {
     "name": "ExpoSentryRepro",
     "slug": "ExpoSentryRepro",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "android": {
+      "package": "com.qwang1993.ExpoSentryRepro"
+    },
+    "ios": {
+      "bundleIdentifier": "com.qwang1993.ExpoSentryRepro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5de6c32a-3846-4dbc-8f6e-3b2e984e8ab4"
+      }
+    },
+    "plugins": [
+      [
+        "@fullstory/react-native",
+        {
+          "org": "3RWN",
+          "host": "staging.fullstory.com",
+          "enabledVariants": "all",
+          "logLevel": "log",
+          "version": "1.66.0"
+        }
+      ],
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "react-native",
+          "organization": "tess-tn"
+        }
+      ]
+    ]
   }
 }

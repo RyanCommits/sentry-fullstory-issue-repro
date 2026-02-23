@@ -9,6 +9,9 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@fullstory/react-native": "^1.8.0",
+    "@sentry/react-native": "8.1.0",
+    "babel-preset-expo": "~54.0.10",
     "expo": "~54.0.33",
     "expo-status-bar": "~3.0.9",
     "react": "19.1.0",
